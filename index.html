@@ -1,0 +1,297 @@
+<!DOCTYPE PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN” “https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd”>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    style="
+      background-color: #f4f4f5;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      font-size: small;
+    "
+  >
+    <table width="100%" cellspacing="0" cellpadding="0">
+      <tbody>
+        <tr>
+          <td align="center">
+            <table
+              cellspacing="0"
+              cellpadding="0"
+              style="max-width: 600px; background-color: white"
+            >
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      class="max-width"
+                      width="100%"
+                      height="auto"
+                      alt=""
+                      data-proportionally-constrained="true"
+                      data-responsive="false"
+                      src="http://cdn.mcauto-images-production.sendgrid.net/80997afb2d14564a/b94e4b30-c1f0-47b9-911d-58863cf0f07c/800x407.jpg"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table
+                      width="100%"
+                      cellspacing="0"
+                      cellpadding="0"
+                      style="padding: 2%"
+                    >
+                      <tbody>
+                        <tr>
+                          <td>
+                            <table width="100%">
+                              <tbody>
+                                <tr>
+                                  <td
+                                    style="
+                                      padding: 80px 0px;
+                                      line-height: 22px;
+                                      text-align: center;
+                                    "
+                                  >
+                                    <h1 style="font-size: 22px !important">
+                                      ĎAKUJEME ZA VÁŠ NÁKUP
+                                    </h1>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <h2
+                                      style="
+                                        font-weight: lighter;
+                                        color: darkslategrey;
+                                        line-height: 1;
+                                      "
+                                    >
+                                      Zhrnutie objednávky:
+                                    </h2>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td
+                                    style="
+                                      height: 1px;
+                                      border-bottom: 1px solid darkslategrey;
+                                    "
+                                  ></td>
+                                </tr>
+
+                                <tr>
+                                  <td>
+                                    <strong>Číslo objednávky: </strong
+                                    >{{orderNumber}}
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <table>
+                                      <tbody>
+                                        <!-- {{#each products}} -->
+                                        <tr>
+                                          <td>
+                                            <img
+                                              class=""
+                                              border="0"
+                                              style="display: block"
+                                              width="104"
+                                              alt="{{this.name}}"
+                                              data-proportionally-constrained="true"
+                                              data-responsive="false"
+                                              src="{{this.thumbnail}}"
+                                              height="104"
+                                            />
+                                          </td>
+                                          <td>
+                                            <table>
+                                              <tbody>
+                                                <tr>
+                                                  <td>
+                                                    <strong
+                                                      >{{this.name}}</strong
+                                                    >
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td
+                                                    style="
+                                                      font-size: 10px;
+                                                      color: darkslategrey;
+                                                    "
+                                                  >
+                                                    {{this.id}}
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    Počet kusov: {{this.count}}
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>{{this.total}} €</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <!-- {{/each}} -->
+                                        <tr>
+                                          <td
+                                            style="
+                                              color: darkslategrey;
+                                              font-size: smaller;
+                                            "
+                                          >
+                                            doprava - kuriér GLS
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td
+                                            style="
+                                              color: darkslategrey;
+                                              font-size: smaller;
+                                            "
+                                          >
+                                            {{this.shipping}} €
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td style="font-size: large">
+                                            Spolu: {{totalWithShipping}} €
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table width="100%">
+                      <tbody align="center">
+                        <tr>
+                          <td style="background-color: #dbdbdb">
+                            <table style="padding: 40px">
+                              <tbody>
+                                <tr>
+                                  <td
+                                    style="
+                                      padding: 0px 0px 20px 0px;
+                                      line-height: 22px;
+                                    "
+                                  >
+                                    Sme vďační, že u nás nakupujete
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td role="button" align="center">
+                                    <a
+                                      href="https://www.thescarabeus.eu/"
+                                      style="
+                                        color: white;
+                                        background-color: black;
+                                        display: inline-block;
+                                        font-size: 12px;
+                                        font-weight: 700;
+                                        letter-spacing: 0px;
+                                        line-height: normal;
+                                        padding: 12px 40px 12px 40px;
+                                        text-align: center;
+                                        text-decoration: none;
+                                        font-family: inherit;
+                                      "
+                                      target="_blank"
+                                    >
+                                      Pokračovať na stránku</a
+                                    >
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              style="
+                                background-color: black;
+                                padding: 40px;
+                                text-align: center;
+                              "
+                            >
+                              <tbody style="color: white">
+                                <tr>
+                                  <td style="padding-bottom: 10px">
+                                    Ak máte akékoľvek otázky alebo nejasnosti,
+                                    prípadne máte záujem o rámik na mieru,
+                                    neváhajte nás kontaktovať.
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="padding-bottom: 10px">
+                                    Veríme, že sa vám náš produkt bude páčiť :)
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <table align="center" cellspacing="5">
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <a
+                                              href="https://www.thescarabeus.eu/"
+                                              ><img
+                                                style="height: 20px"
+                                                src="http://cdn.mcauto-images-production.sendgrid.net/80997afb2d14564a/7394d76c-fdb6-4a84-9337-50977ea5082c/96x96.png"
+                                            /></a>
+                                          </td>
+                                          <td>
+                                            <a
+                                              href="https://www.instagram.com/the.scarabeus/"
+                                              ><img
+                                                style="height: 20px"
+                                                src="http://cdn.mcauto-images-production.sendgrid.net/80997afb2d14564a/c116678c-1236-4bd3-9be0-7ed0a1717495/609x613.png"
+                                            /></a>
+                                          </td>
+                                          <td>
+                                            <a
+                                              href="https://www.thescarabeus.eu/"
+                                              ><img
+                                                style="height: 20px"
+                                                src="http://cdn.mcauto-images-production.sendgrid.net/80997afb2d14564a/27146304-b924-4038-beaf-92c3b2876807/100x100.png"
+                                            /></a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
