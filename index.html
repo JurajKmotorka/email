@@ -23,7 +23,7 @@
             <table
               cellspacing="0"
               cellpadding="0"
-              style="max-width: 600px; background-color: white"
+              style="max-width: 700px; background-color: white"
             >
               <tbody>
                 <tr>
@@ -94,79 +94,88 @@
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td>
+                                  <td style="padding: 0">
                                     <table>
                                       <tbody>
                                         <!-- {{#each products}} -->
                                         <tr>
-                                          <td>
-                                            <img
-                                              class=""
-                                              border="0"
-                                              style="display: block"
-                                              width="104"
-                                              alt="{{this.name}}"
-                                              data-proportionally-constrained="true"
-                                              data-responsive="false"
-                                              src="{{this.thumbnail}}"
-                                              height="104"
-                                            />
-                                          </td>
-                                          <td>
+                                          <td
+                                            style="
+                                              padding: 6px;
+                                              padding-left: 0px;
+                                            "
+                                          >
                                             <table>
-                                              <tbody>
-                                                <tr>
-                                                  <td>
-                                                    <strong
-                                                      >{{this.name}}</strong
-                                                    >
-                                                  </td>
-                                                </tr>
-                                                <tr>
-                                                  <td
-                                                    style="
-                                                      font-size: 10px;
-                                                      color: darkslategrey;
-                                                    "
-                                                  >
-                                                    {{this.id}}
-                                                  </td>
-                                                </tr>
-                                                <tr>
-                                                  <td>
-                                                    Počet kusov: {{this.count}}
-                                                  </td>
-                                                </tr>
-                                                <tr>
-                                                  <td>{{this.total}} €</td>
-                                                </tr>
-                                              </tbody>
+                                              <tr>
+                                                <td>
+                                                  <img
+                                                    border="0"
+                                                    style="display: block"
+                                                    width="104"
+                                                    alt="{{this.name}}"
+                                                    data-proportionally-constrained="true"
+                                                    data-responsive="false"
+                                                    src="{{this.thumbnail}}"
+                                                    height="104"
+                                                  />
+                                                </td>
+                                                <td>
+                                                  <table>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>
+                                                          <strong
+                                                            >{{this.name}}</strong
+                                                          >
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td
+                                                          style="
+                                                            font-size: 10px;
+                                                            color: darkslategrey;
+                                                          "
+                                                        >
+                                                          {{this.id}}
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>
+                                                          Počet kusov:
+                                                          {{this.count}}
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>
+                                                          {{this.total}} €
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </td>
+                                              </tr>
                                             </table>
                                           </td>
                                         </tr>
+
                                         <!-- {{/each}} -->
                                         <tr>
-                                          <td
-                                            style="
-                                              color: darkslategrey;
-                                              font-size: smaller;
-                                            "
-                                          >
+                                          <td style="color: darkslategrey">
                                             doprava - kuriér GLS
                                           </td>
                                         </tr>
                                         <tr>
-                                          <td
-                                            style="
-                                              color: darkslategrey;
-                                              font-size: smaller;
-                                            "
-                                          >
+                                          <td style="color: darkslategrey">
                                             {{this.shipping}} €
                                           </td>
                                         </tr>
                                         <tr>
-                                          <td style="font-size: large">
+                                          <td
+                                            style="
+                                              font-size: larger;
+                                              padding-top: 10px;
+                                            "
+                                          >
                                             Spolu: {{totalWithShipping}} €
                                           </td>
                                         </tr>
@@ -195,6 +204,8 @@
                                     style="
                                       padding: 0px 0px 20px 0px;
                                       line-height: 22px;
+                                      font-weight: 600;
+                                      text-align: center;
                                     "
                                   >
                                     Sme vďační, že u nás nakupujete
@@ -209,7 +220,7 @@
                                         background-color: black;
                                         display: inline-block;
                                         font-size: 12px;
-                                        font-weight: 700;
+                                        font-weight: 600;
                                         letter-spacing: 0px;
                                         line-height: normal;
                                         padding: 12px 40px 12px 40px;
@@ -232,7 +243,7 @@
                                 text-align: center;
                               "
                             >
-                              <tbody style="color: white">
+                              <tbody style="color: white; font-weight: 500">
                                 <tr>
                                   <td style="padding-bottom: 10px">
                                     Ak máte akékoľvek otázky alebo nejasnosti,
